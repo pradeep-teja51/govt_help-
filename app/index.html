@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GA Notes — General Awareness for Govt Exams</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Top Bar -->
+    <header class="topbar">
+      <button class="sidebar-toggle" id="sidebarToggle" aria-label="Toggle sidebar">☰</button>
+      <div class="topbar-brand">
+        <span class="brand-icon">📚</span>
+        <span class="brand-text">GA Notes</span>
+      </div>
+      <div class="search-wrap">
+        <input type="search" id="searchInput" placeholder="Search any topic..." autocomplete="off">
+        <div id="searchResults" class="search-results hidden"></div>
+      </div>
+      <div class="topbar-actions">
+        <button id="bookmarkBtn" class="icon-btn" title="Bookmark this topic">☆</button>
+        <button id="printBtn" class="icon-btn" title="Print topic">🖨</button>
+        <button id="darkModeToggle" class="icon-btn" title="Toggle dark mode">🌙</button>
+      </div>
+    </header>
+
+    <div class="layout">
+      <!-- Sidebar -->
+      <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+          <h2>All Subjects</h2>
+          <div class="overall-progress">
+            <span id="overallProgressText">0% Complete</span>
+            <div class="progress-bar"><div id="overallProgressBar" class="progress-fill"></div></div>
+          </div>
+        </div>
+        <nav id="sidebarNav" class="sidebar-nav"></nav>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content" id="mainContent">
+        <!-- Homepage -->
+        <section id="homepage" class="homepage">
+          <div class="motivation-banner">
+            <p id="motivationQuote">"Every expert was once a beginner. You CAN do this!"</p>
+          </div>
+          <h1 class="home-title">General Awareness — All in One Place</h1>
+          <p class="home-subtitle">Simple notes for SSC, Railways, Banking, UPSC & more. Written so even a Class 6 student can understand!</p>
+
+          <div id="lastVisited" class="last-visited hidden"></div>
+
+          <div id="subjectCards" class="subject-cards"></div>
+
+          <section class="bookmarks-section" id="bookmarksSection">
+            <h2>⭐ My Bookmarks</h2>
+            <div id="bookmarksList" class="bookmarks-list">
+              <p class="empty-msg">No bookmarks yet. Open any topic and click ☆ to save it.</p>
+            </div>
+          </section>
+        </section>
+
+        <!-- Topic View -->
+        <section id="topicView" class="topic-view hidden">
+          <nav id="breadcrumb" class="breadcrumb"></nav>
+          <article id="topicContent" class="topic-article"></article>
+          <button id="backToTop" class="back-to-top" title="Back to top">↑</button>
+        </section>
+      </main>
+    </div>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+  </div>
+
+  <!-- Data Files -->
+  <script src="data/contentHelper.js"></script>
+  <script src="data/railwayLists.js"></script>
+  <script src="data/history.js"></script>
+  <script src="data/polity.js"></script>
+  <script src="data/economy.js"></script>
+  <script src="data/geography.js"></script>
+  <script src="data/staticgk.js"></script>
+  <script src="data/science.js"></script>
+  <script src="data/computers.js"></script>
+  <script src="data/maths.js"></script>
+  <script src="data/english.js"></script>
+  <!-- Components -->
+  <script src="components/progress.js"></script>
+  <script src="components/search.js"></script>
+  <script src="components/sidebar.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
