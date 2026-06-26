@@ -1,94 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GA Notes — General Awareness for Govt Exams</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GovtHelp - Central Govt Job Preparation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Roboto', sans-serif; line-height: 1.6; margin: 0; background: #f0f2f5; color: #333; }
+        header { background: #003366; color: white; padding: 50px 20px; text-align: center; }
+        nav { background: #fff; padding: 15px; position: sticky; top: 0; display: flex; justify-content: center; gap: 30px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); z-index: 1000; }
+        nav a { text-decoration: none; color: #003366; font-weight: bold; }
+        .container { max-width: 1200px; margin: 30px auto; padding: 0 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .card { background: white; padding: 25px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-top: 5px solid #ff9900; }
+        h2 { color: #003366; text-align: center; margin-top: 50px; }
+        .topic-list { list-style: none; padding: 0; }
+        .topic-list li { padding: 8px 0; border-bottom: 1px solid #eee; }
+        .topic-list li::before { content: "• "; color: #ff9900; font-weight: bold; }
+        .alert { background: #fff3cd; padding: 20px; border-radius: 8px; border-left: 5px solid #ffc107; margin: 40px 0; }
+        footer { background: #001a33; color: white; text-align: center; padding: 30px; margin-top: 60px; }
+    </style>
 </head>
 <body>
-  <div id="app">
-    <!-- Top Bar -->
-    <header class="topbar">
-      <button class="sidebar-toggle" id="sidebarToggle" aria-label="Toggle sidebar">☰</button>
-      <div class="topbar-brand">
-        <span class="brand-icon">📚</span>
-        <span class="brand-text">GA Notes</span>
-      </div>
-      <div class="search-wrap">
-        <input type="search" id="searchInput" placeholder="Search any topic..." autocomplete="off">
-        <div id="searchResults" class="search-results hidden"></div>
-      </div>
-      <div class="topbar-actions">
-        <button id="bookmarkBtn" class="icon-btn" title="Bookmark this topic">☆</button>
-        <button id="printBtn" class="icon-btn" title="Print topic">🖨</button>
-        <button id="darkModeToggle" class="icon-btn" title="Toggle dark mode">🌙</button>
-      </div>
-    </header>
 
-    <div class="layout">
-      <!-- Sidebar -->
-      <aside class="sidebar" id="sidebar">
-        <div class="sidebar-header">
-          <h2>All Subjects</h2>
-          <div class="overall-progress">
-            <span id="overallProgressText">0% Complete</span>
-            <div class="progress-bar"><div id="overallProgressBar" class="progress-fill"></div></div>
-          </div>
-        </div>
-        <nav id="sidebarNav" class="sidebar-nav"></nav>
-      </aside>
+<header>
+    <h1>GovtHelp Preparation Hub</h1>
+    <p>Complete | Simplified | Error-Free Content for Students</p>
+</header>
 
-      <!-- Main Content -->
-      <main class="main-content" id="mainContent">
-        <!-- Homepage -->
-        <section id="homepage" class="homepage">
-          <div class="motivation-banner">
-            <p id="motivationQuote">"Every expert was once a beginner. You CAN do this!"</p>
-          </div>
-          <h1 class="home-title">General Awareness — All in One Place</h1>
-          <p class="home-subtitle">Simple notes for SSC, Railways, Banking, UPSC & more. Written so even a Class 6 student can understand!</p>
+<nav>
+    <a href="#math">Mathematics</a>
+    <a href="#reasoning">Reasoning</a>
+    <a href="#gs">General Studies</a>
+    <a href="#english">English</a>
+    <a href="#missing">New Topics</a>
+</nav>
 
-          <div id="lastVisited" class="last-visited hidden"></div>
-
-          <div id="subjectCards" class="subject-cards"></div>
-
-          <section class="bookmarks-section" id="bookmarksSection">
-            <h2>⭐ My Bookmarks</h2>
-            <div id="bookmarksList" class="bookmarks-list">
-              <p class="empty-msg">No bookmarks yet. Open any topic and click ☆ to save it.</p>
-            </div>
-          </section>
-        </section>
-
-        <!-- Topic View -->
-        <section id="topicView" class="topic-view hidden">
-          <nav id="breadcrumb" class="breadcrumb"></nav>
-          <article id="topicContent" class="topic-article"></article>
-          <button id="backToTop" class="back-to-top" title="Back to top">↑</button>
-        </section>
-      </main>
+<div class="container">
+    
+    <div class="alert">
+        <strong>Student Note:</strong> This content is updated for 2024-25 Central Exams (SSC CGL, CHSL, MTS, GD, RRB NTPC, and Banking). No topic is skipped.
     </div>
 
-    <div class="sidebar-overlay" id="sidebarOverlay"></div>
-  </div>
+    <h2 id="math">1. Quantitative Aptitude (Maths)</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Arithmetic</h3>
+            <ul class="topic-list">
+                <li>Percentage & Profit/Loss</li>
+                <li>Ratio & Proportion</li>
+                <li>SI & CI (Simple/Compound Interest)</li>
+                <li>Time, Work & Wages</li>
+                <li>Speed, Time & Distance</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Advance Maths</h3>
+            <ul class="topic-list">
+                <li>Algebra (Linear/Quadratic)</li>
+                <li>Geometry (Triangles, Circles, Polygons)</li>
+                <li>Trigonometry & Heights</li>
+                <li>Mensuration 2D/3D</li>
+                <li>Statistics & Probability</li>
+            </ul>
+        </div>
+    </div>
 
-  <!-- Data Files -->
-  <script src="data/contentHelper.js"></script>
-  <script src="data/railwayLists.js"></script>
-  <script src="data/history.js"></script>
-  <script src="data/polity.js"></script>
-  <script src="data/economy.js"></script>
-  <script src="data/geography.js"></script>
-  <script src="data/staticgk.js"></script>
-  <script src="data/science.js"></script>
-  <script src="data/computers.js"></script>
-  <script src="data/maths.js"></script>
-  <script src="data/english.js"></script>
-  <!-- Components -->
-  <script src="components/progress.js"></script>
-  <script src="components/search.js"></script>
-  <script src="components/sidebar.js"></script>
-  <script src="app.js"></script>
+    <h2 id="reasoning">2. Reasoning & Intelligence</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Verbal & Logical</h3>
+            <ul class="topic-list">
+                <li>Syllogism (All/Some/None)</li>
+                <li>Blood Relations</li>
+                <li>Coding-Decoding</li>
+                <li>Seating Arrangement (Linear/Circular)</li>
+                <li>Distance & Direction Sense</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Non-Verbal</h3>
+            <ul class="topic-list">
+                <li>Mirror & Water Images</li>
+                <li>Paper Folding & Cutting</li>
+                <li>Embedded Figures</li>
+                <li>Analogy & Series</li>
+            </ul>
+        </div>
+    </div>
+
+    <h2 id="gs">3. General Studies & GK</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>History & Polity</h3>
+            <ul class="topic-list">
+                <li>Ancient, Medieval, Modern History</li>
+                <li>Indian Constitution & Articles</li>
+                <li>Parliament & Judiciary</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Geography & Science</h3>
+            <ul class="topic-list">
+                <li>Physical & Indian Geography</li>
+                <li>Physics, Chemistry, Biology</li>
+                <li>Environment & Ecology</li>
+            </ul>
+        </div>
+    </div>
+
+    <h2 id="missing">4. Critical Missing Subjects (Added)</h2>
+    <div class="grid">
+        <div class="card" style="border-top-color: #28a745;">
+            <h3>Static GK (Important)</h3>
+            <ul class="topic-list">
+                <li>Classical Dances & Festivals</li>
+                <li>National Parks & Rivers</li>
+                <li>International Organizations (UN, IMF)</li>
+                <li>Books, Authors & Awards</li>
+            </ul>
+        </div>
+        <div class="card" style="border-top-color: #28a745;">
+            <h3>Computer Awareness</h3>
+            <ul class="topic-list">
+                <li>Hardware & Software Basics</li>
+                <li>MS Office (Word, Excel, PPT)</li>
+                <li>Internet & Cyber Security</li>
+                <li>Keyboard Shortcuts</li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p><strong>GovtHelp Preparation Portal</strong></p>
+    <p>Your path to a Central Government Job starts here.</p>
+</footer>
+
 </body>
 </html>
