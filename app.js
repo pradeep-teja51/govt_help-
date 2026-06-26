@@ -28,6 +28,7 @@ function initApp() {
     window.GA_DATA.science,
     window.GA_DATA.computers,
     window.GA_DATA.maths,
+    window.GA_DATA.reasoning,
     window.GA_DATA.english
   ].filter(Boolean);
 
